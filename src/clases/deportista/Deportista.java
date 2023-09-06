@@ -10,17 +10,14 @@ public class Deportista {
 
 
     public void setName(String name) {
-
         this.name = name;
     }
 
     public void setLastName(String lastName) {
-
         this.lastName = lastName;
     }
 
     public void setSportSelected(String sportSelected) {
-
         this.sportSelected = sportSelected;
     }
 

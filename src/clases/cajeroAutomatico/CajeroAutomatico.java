@@ -10,11 +10,11 @@ public class CajeroAutomatico {
 
     public String tipoOperacion;
     public String sucursal;
-    double valorOperacion;
-    double saldoTotal;
+    Double valorOperacion;
+    Double saldoTotal;
 
     public CajeroAutomatico(String sucursal) {
-        this.saldoTotal = 3000;
+        this.saldoTotal = 3000.00;
         this.sucursal = sucursal;
     }
 
@@ -28,17 +28,27 @@ public class CajeroAutomatico {
                 break;
             case "E":
             case "D":
-                Operar();
+                ValidarMonto();
                 break;
             default:
                 System.out.println("Sucursal " + this.sucursal + " informa:\nOperacion invalida");
         }
     }
 
+    //VALIDAR INGRESO
+    public void ValidarMonto() {
+        String valorIngresado = JOptionPane.showInputDialog("Ingrese el importe a operar:");
+        try {
+            Double.parseDouble(String.valueOf(valorIngresado));
+            this.valorOperacion = Double.parseDouble(valorIngresado);
+            Operar();
+        } catch (NumberFormatException e) {
+            System.out.println("Valor erroneo. Operacion anulada");
+        }
+    }
 
     // Valor operacion
     public void Operar() {
-        this.valorOperacion = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el importe a operar:"));
         if (this.tipoOperacion.equalsIgnoreCase("E")) {
             this.saldoTotal = this.saldoTotal - this.valorOperacion;
             Imprimir();

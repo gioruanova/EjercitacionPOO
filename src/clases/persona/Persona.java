@@ -6,13 +6,14 @@ package clases.persona;
 public class Persona {
     private String name;
     private String lastname;
-    private int age;
+    private Integer age;
 
     private void setName(String name) {
+
         this.name = name;
     }
 
-    private void setAge(int age) {
+    private void setAge(Integer age) {
         this.age = age;
     }
 
@@ -21,21 +22,21 @@ public class Persona {
     }
 
 
-    public void Caminar(String name, String lastname, int age) {
+    public void Caminar(String name, String lastname, Integer age) {
         this.setName(name);
         this.setLastname(lastname);
         this.setAge(age);
         System.out.println(this.name + " " + this.lastname + " tiene " + this.age + " años y esta caminando.\n");
     }
 
-    public void Saltar(String name, String lastname, int age) {
+    public void Saltar(String name, String lastname, Integer age) {
         this.setName(name);
         this.setLastname(lastname);
         this.setAge(age);
         System.out.println(this.name + " " + this.lastname + " tiene " + this.age + " años y esta saltando.\n");
     }
 
-    public void Hablar(String name, String lastname, int age) {
+    public void Hablar(String name, String lastname, Integer age) {
         this.setName(name);
         this.setLastname(lastname);
         this.setAge(age);

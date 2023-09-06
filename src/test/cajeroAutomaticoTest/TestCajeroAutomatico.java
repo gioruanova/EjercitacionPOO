@@ -8,6 +8,7 @@ public class TestCajeroAutomatico {
         System.out.println("\n-----------\n");
         CajeroAutomatico cajeroUno = new CajeroAutomatico("Palermo");
         cajeroUno.IngresarCajero();
+
         System.out.println("\n-----------\n");
 
         CajeroAutomatico cajeroDos = new CajeroAutomatico("Obelisco");

@@ -6,14 +6,14 @@ package clases.avion;
 
 public class Avion {
     private String modelo;
-    private int capacidadPasajeros;
-    protected int alturaMaxima;
+    private Integer capacidadPasajeros;
+    protected Double alturaMaxima;
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
-    public void setAlturaMaxima(int alturaMaxima) {
+    public void setAlturaMaxima(Double alturaMaxima) {
         this.alturaMaxima = alturaMaxima;
     }
 

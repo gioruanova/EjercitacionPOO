@@ -1,6 +1,7 @@
 package test.deportistaTest;
-
 import clases.deportista.DeportistaComplex;
+
+//> 18 años && resistencia >=99 = puede jugar
 
 public class TestDeportistaComplex {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class TestDeportistaComplex {
 
         DeportistaComplex deportistaUno = new DeportistaComplex();
         deportistaUno.setAge(17);
-        deportistaUno.setName("Jorgito");
+        deportistaUno.setName("Uno");
         deportistaUno.Mostrar();
         deportistaUno.JugarPartido();
 
@@ -19,7 +20,7 @@ public class TestDeportistaComplex {
 
         DeportistaComplex deportistaDos = new DeportistaComplex();
         deportistaDos.setAge(22);
-        deportistaDos.setName("Pepito");
+        deportistaDos.setName("Dos");
         deportistaDos.Run();
         deportistaDos.Run();
         deportistaDos.Mostrar();
@@ -29,7 +30,7 @@ public class TestDeportistaComplex {
 
         DeportistaComplex deportistaTres = new DeportistaComplex();
         deportistaTres.setAge(35);
-        deportistaTres.setName("Sultano");
+        deportistaTres.setName("Tres");
         deportistaTres.Mostrar();
         deportistaTres.JugarPartido();
 

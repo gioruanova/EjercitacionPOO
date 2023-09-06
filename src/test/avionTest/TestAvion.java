@@ -9,7 +9,7 @@ public class TestAvion {
 
         Avion avionUno = new Avion();
         avionUno.setModelo("Airbus");
-        avionUno.setAlturaMaxima(10000);
+        avionUno.setAlturaMaxima(10000.00);
         avionUno.setCapacidadPasajeros(800);
         avionUno.Volar();
 
@@ -17,7 +17,7 @@ public class TestAvion {
 
         Avion avionDos = new Avion();
         avionDos.setModelo("Cesna");
-        avionDos.setAlturaMaxima(5000);
+        avionDos.setAlturaMaxima(5000.00);
         avionDos.setCapacidadPasajeros(4);
         avionDos.Aterrizar();
 

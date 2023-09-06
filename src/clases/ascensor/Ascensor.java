@@ -4,11 +4,11 @@ package clases.ascensor;
 // marca y contenga las funcionalidades subir y bajar.
 
 public class Ascensor {
-    int nroSerie;
+    Integer nroSerie;
     String marca;
 
 
-    public Ascensor(String marca, int nroSerie) {
+    public Ascensor(String marca, Integer nroSerie) {
         this.marca = marca;
         this.nroSerie = nroSerie;
     }

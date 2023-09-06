@@ -14,7 +14,7 @@ public class TestPersona {
         System.out.println("\n-----------\n");
 
         Persona personaDos = new Persona();
-        personaDos.Saltar("Pepe","Sultano",40);
+        personaDos.Saltar("Carlos","Perez",40);
 
 
         System.out.println("\n-----------\n");

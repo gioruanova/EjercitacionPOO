@@ -4,8 +4,8 @@ public class DeportistaComplex {
 
     // Private attr
     private String name;
-    private int resist;
-    private int age;
+    private Integer resist;
+    private Integer age;
 
 
     // Constructores
@@ -15,7 +15,7 @@ public class DeportistaComplex {
 
 
     // aca los getters y setters
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
