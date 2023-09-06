@@ -31,7 +31,7 @@ public class CajeroAutomatico {
                 ValidarMonto();
                 break;
             default:
-                System.out.println("Sucursal " + this.sucursal + " informa:\nOperacion invalida");
+                System.out.println("Sucursal " + this.sucursal + " informa:\nOperacion inexistente");
         }
     }
 
@@ -39,11 +39,10 @@ public class CajeroAutomatico {
     public void ValidarMonto() {
         String valorIngresado = JOptionPane.showInputDialog("Ingrese el importe a operar:");
         try {
-            Double.parseDouble(String.valueOf(valorIngresado));
-            this.valorOperacion = Double.parseDouble(valorIngresado);
+            this.valorOperacion = Double.parseDouble(String.valueOf(valorIngresado));
             Operar();
         } catch (NumberFormatException e) {
-            System.out.println("Valor erroneo. Operacion anulada");
+            System.out.println("Sucursal " + this.sucursal + "\nValor erroneo. Operacion anulada");
         }
     }
 
