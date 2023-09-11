@@ -26,6 +26,10 @@ public class Avion {
         System.out.println("El avion modelo " + this.modelo + " con capacidad de " + this.capacidadPasajeros + " pasajeros, y su maximo de altitud es " + this.alturaMaxima + "mts, esta VOLANDO.");
     }
 
+    public void Despegar() {
+        System.out.println("El avion modelo " + this.modelo + " con capacidad de " + this.capacidadPasajeros + " pasajeros, y su maximo de altitud es " + this.alturaMaxima + "mts, esta DESPEGANDO.");
+    }
+
     public void Aterrizar() {
         System.out.println("El avion modelo " + this.modelo + " con capacidad de " + this.capacidadPasajeros + " pasajeros, y su maximo de altitud es " + this.alturaMaxima + "mts, esta ATERRIZANDO.");
 

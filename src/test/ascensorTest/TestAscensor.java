@@ -15,6 +15,7 @@ public class TestAscensor {
         Ascensor ascensorDos = new Ascensor("LG",7500004);
         ascensorDos.Bajar();
 
+
         System.out.println("\n-----------\n");
 
     }

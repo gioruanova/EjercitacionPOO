@@ -22,5 +22,13 @@ public class TestAvion {
         avionDos.Aterrizar();
 
         System.out.println("\n-----------\n");
+
+        Avion avionTres = new Avion();
+        avionTres.setModelo("747");
+        avionTres.setAlturaMaxima(10000.0);
+        avionTres.setCapacidadPasajeros(450);
+        avionTres.Aterrizar();
+
+        System.out.println("\n-----------\n");
     }
 }
