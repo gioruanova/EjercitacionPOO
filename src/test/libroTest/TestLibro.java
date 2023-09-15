@@ -10,7 +10,7 @@ public class TestLibro {
         libroUno.setTituloLibro("1984");
         libroUno.setAutorLibro("George Orwell");
         libroUno.setIsbn("#12345ABCD");
-        libroUno.setNumeroPaginasLibro(350);
+        libroUno.setNumeroPaginasLibro(224);
         libroUno.Mostrar();
 
         System.out.println("\n-------------------\n");
@@ -25,13 +25,11 @@ public class TestLibro {
 
         System.out.println("\n");
 
-        if (libroUno.getNumeroPaginasLibro() > libroDos.getNumeroPaginasLibro()) {
-            System.out.println("El libro " + libroUno.getTituloLibro() + " tiene mas paginas que el libro " + libroDos.getTituloLibro());
-        } else if (libroUno.getNumeroPaginasLibro() < libroDos.getNumeroPaginasLibro()) {
-            System.out.println("El libro " + libroDos.getTituloLibro() + " tiene mas paginas que el libro " + libroUno.getTituloLibro());
-        } else {
-            System.out.println("Ambos libros tienen la misma cantidad de paginas");
-        }
+        libroUno.CompararLibro(libroDos);
+        libroDos.CompararLibro(libroUno);
+
         System.out.println("\n");
     }
+
+
 }

@@ -39,6 +39,16 @@ public class Libro {
         return numeroPaginasLibro;
     }
 
+    public void CompararLibro(Libro libroDos) {
+        if (this.getNumeroPaginasLibro() > libroDos.getNumeroPaginasLibro()) {
+            System.out.println("El libro " + this.getTituloLibro() + " tiene mas paginas que el libro " + libroDos.getTituloLibro());
+        } else if (this.getNumeroPaginasLibro() < libroDos.getNumeroPaginasLibro()) {
+            System.out.println("El libro " + libroDos.getTituloLibro() + " tiene mas paginas que el libro " + this.getTituloLibro());
+        } else {
+            System.out.println("Ambos libros tienen la misma cantidad de paginas");
+        }
+    }
+
     public String getTituloLibro() {
         return tituloLibro;
     }
