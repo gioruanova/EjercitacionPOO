@@ -1,0 +1,16 @@
+@startmindmap
+
+* Ciudad
+** nombre
+** Comunas
+*** id
+*** Estaciones
+**** id
+**** nombre
+**** Bicicletas
+***** codigo
+***** Estado
+****** disponible
+****** en uso
+****** reparación
+@endmindmap

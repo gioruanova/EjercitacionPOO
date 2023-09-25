@@ -1,0 +1,45 @@
+@startuml
+
+Title Diagrama de clase de Estadística de Bicicletas
+
+class Ciudad {
+	- nombre : String
+	- comunas : Comuna[]
+
+	+ mostrarEstadoDeEstacion(idComuna:Integer, idEstacion:Integer, estadoDeBicicleta:String) : Double
+	+ estacionConMayorDisponibilidad()
+	+ estacionConMayorDisponibilidad(idComuna:Integer)
+
+}
+
+class Comuna {
+	- id : Integer
+	- estaciones : Estacion[]
+
+	+ mostrarEstadoDeEstacion(idEstacion:Integer, estadoDeBicicleta:String) : Double
+	+ estacionConMayorDisponibilidad()
+}
+
+class Estacion {
+	- id : Integer
+	- nombre : String
+	- bicicletas : Bicicleta[]
+
+	+ mostrarEstadoDeEstacion(estadoDeBicicleta:String) : Double
+	+ obtenerDisponibles()
+}
+
+class Bicicleta {
+	+ ESTADO_DISPONIBLE : String
+	+ ESTADO_EN_USO : String
+	+ ESTADO_REPARACION : String
+
+	- codigo : String
+	- estado : String
+}
+
+Ciudad "1" -- "1..*" Comuna
+Comuna "1" -- "1..*" Estacion
+Estacion "1" -- "1..*" Bicicleta
+
+@enduml
