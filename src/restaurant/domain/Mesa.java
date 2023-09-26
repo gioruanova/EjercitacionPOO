@@ -1,4 +1,4 @@
-package restaurant.domain;
+package domain;
 
 public class Mesa {
 
@@ -8,14 +8,17 @@ public class Mesa {
 
     // Atributos
     private Integer idMesa;
-    private boolean mesaEstado;
+  //  private boolean mesaEstado;
+
+    // Cambie el boolean por un String para el estado de la mesa.
+    private String mesaEstado;
     private Integer mesaCapacidad;
 
 
     // Getters & Setters
-    public Mesa(Integer idMesa, Integer mesaCapacidad) {
+    public Mesa(Integer idMesa,String mesaEstado, Integer mesaCapacidad) {
         this.idMesa = idMesa;
-        this.mesaEstado = true;
+        this.mesaEstado = mesaEstado;
         this.mesaCapacidad = mesaCapacidad;
     }
 
@@ -27,11 +30,11 @@ public class Mesa {
         this.idMesa = idMesa;
     }
 
-    public boolean isMesaEstado() {
+    public String getEstado() {
         return mesaEstado;
     }
 
-    public void setMesaEstado(boolean mesaEstado) {
+    public void setMesaEstado(String mesaEstado) {
         this.mesaEstado = mesaEstado;
     }
 
@@ -42,6 +45,7 @@ public class Mesa {
     public void setMesaCapacidad(Integer mesaCapacidad) {
         this.mesaCapacidad = mesaCapacidad;
     }
+
 
 
     // Metodos
